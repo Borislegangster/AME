@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { SEO } from '../components/SEO';
 import { BuildingIcon, HomeIcon, WrenchIcon, Pencil, HardHat, Ruler, PaintBucket, Hammer } from 'lucide-react';
 const services = [{
   category: 'Construction',
@@ -51,6 +52,7 @@ const services = [{
 export function Services() {
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO title="Nos Services de Construction" description="Découvrez notre gamme complète de services en construction, rénovation et architecture. Des solutions professionnelles adaptées à tous vos projets." image="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1" />
       <div className="bg-[#0a1e37] text-white py-20">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center">

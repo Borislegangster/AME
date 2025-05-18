@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { SEO } from '../../components/SEO';
 import { MailIcon } from 'lucide-react';
 export function ForgotPassword() {
   const [email, setEmail] = useState('');
@@ -11,6 +12,7 @@ export function ForgotPassword() {
   };
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 px-4 sm:px-6 lg:px-8">
+      <SEO title="Mot de passe oublié" description="Réinitialisez votre mot de passe AME Construction. Processus simple et sécurisé pour récupérer l'accès à votre compte." />
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <div className="text-center">
           <Link to="/" className="text-[#0a1e37] text-3xl font-bold inline-flex items-center">

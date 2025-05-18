@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { SEO } from '../components/SEO';
 import { SearchIcon, HomeIcon, FileTextIcon, WrenchIcon, HelpCircleIcon, PhoneIcon, MailIcon, ExternalLinkIcon, ArrowRightIcon } from "lucide-react";
 export function Help() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -22,6 +23,7 @@ export function Help() {
   const quickLinks = ["Comment démarrer un projet ?", "Obtenir un devis", "Suivi de projet", "Garanties et assurances", "Paiements et facturation", "Réclamations"];
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO title="Centre d'Aide" description="Consultez notre centre d'aide pour obtenir des informations sur nos services de construction et rénovation." />
       <div className="bg-[#0a1e37] text-white py-20">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-center mb-6">

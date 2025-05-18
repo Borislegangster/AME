@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
+import { SEO } from '../components/SEO';
 import { HeartIcon, MessageCircleIcon, ShareIcon, FacebookIcon, TwitterIcon, LinkedinIcon, SendIcon } from "lucide-react";
 // Mock data - In a real app, this would come from an API
 const blogPostData = {
@@ -43,6 +44,7 @@ export function BlogPost() {
   }
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO title={post.title} description={post.content} image={post.image} article={true} />
       {/* Hero Section */}
       <div className="bg-[#0a1e37] text-white py-20">
         <div className="container mx-auto px-4">

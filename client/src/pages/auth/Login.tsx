@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { SEO } from '../../components/SEO';
 import { MailIcon, LockIcon, EyeIcon, EyeOffIcon } from 'lucide-react';
 export function Login() {
   const [showPassword, setShowPassword] = useState(false);
@@ -15,6 +16,7 @@ export function Login() {
   };
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 px-4 sm:px-6 lg:px-8">
+      <SEO title="Connexion" description="Connectez-vous à votre compte AME Construction pour accéder à vos projets et suivre l'avancement de vos travaux." />
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <div className="text-center">
           <Link to="/" className="text-[#0a1e37] text-3xl font-bold inline-flex items-center">

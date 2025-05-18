@@ -1,4 +1,5 @@
 import { useParams, Link } from "react-router-dom";
+import { SEO } from '../components/SEO';
 import { CalendarIcon, MapPinIcon, ClockIcon, CheckCircleIcon, BuildingIcon, UsersIcon, WrenchIcon } from "lucide-react";
 // Mock data - In a real app, this would come from an API
 const projectDetails = {
@@ -171,6 +172,7 @@ export function ProjectDetail() {
   }
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO title={project.title} description={project.description} image={project.mainImage} />
       {/* Hero Section */}
       <div className="bg-[#0a1e37] text-white py-20">
         <div className="container mx-auto px-4">

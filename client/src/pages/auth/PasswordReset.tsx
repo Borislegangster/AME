@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
+import { SEO } from '../../components/SEO';
 import { LockIcon, EyeIcon, EyeOffIcon } from 'lucide-react';
 export function PasswordReset() {
   const [searchParams] = useSearchParams();
@@ -18,6 +19,7 @@ export function PasswordReset() {
   if (!token) {
     return (
       <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <SEO title="Réinitialisation du mot de passe" description="Définissez votre nouveau mot de passe AME Construction. Sécurisez votre compte avec un nouveau mot de passe." />
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
           <div className="bg-white py-8 px-4 shadow-sm rounded-lg sm:px-10">
             <div className="text-center">

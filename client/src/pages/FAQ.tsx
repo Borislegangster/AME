@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { SEO } from '../components/SEO';
 import { SearchIcon, ChevronDownIcon, ChevronUpIcon, HelpCircleIcon, BuildingIcon, WrenchIcon, ClockIcon, CreditCardIcon, ShieldIcon, ArrowRightIcon } from "lucide-react";
 export function FAQ() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -48,6 +49,7 @@ export function FAQ() {
   }];
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO title="Questions Fréquentes" description="Trouvez les réponses à vos questions sur nos services de construction et rénovation. FAQ complète sur nos prestations, processus et garanties." />
       <div className="bg-[#0a1e37] text-white py-20">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center mb-6">

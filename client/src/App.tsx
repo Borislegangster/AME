@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from 'react-helmet';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
@@ -24,6 +25,13 @@ export function App() {
   return (
     <Router>
       <div className="flex flex-col w-full min-h-full">
+        <Helmet>
+          <html lang="fr" />
+          <meta charSet="utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="theme-color" content="#0a1e37" />
+          <link rel="alternate" href="https://www.ame-construction.fr" hrefLang="fr-FR" />
+        </Helmet>
         <Header />
         <main>
           <Routes>

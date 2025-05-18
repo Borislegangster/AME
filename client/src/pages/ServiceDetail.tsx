@@ -1,4 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
+import { SEO } from '../components/SEO';
 import { CheckCircleIcon, ClockIcon, PhoneIcon, HomeIcon, WrenchIcon, Ruler, PaintBucket, HardHat, Hammer, Pencil } from 'lucide-react';
 // Mock data - In a real app, this would come from an API
 const servicesData = {
@@ -226,12 +227,13 @@ export function ServiceDetail() {
   }
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO title={prestation.title} description={prestation.description} image={prestation.image} />
       {/* Hero Section */}
       <div className="relative bg-[#0a1e37] text-white py-32" style={{
-      backgroundImage: `linear-gradient(rgba(10, 30, 55, 0.8), rgba(10, 30, 55, 0.8)), url(${prestation.image})`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center'
-    }}>
+        backgroundImage: `linear-gradient(rgba(10, 30, 55, 0.8), rgba(10, 30, 55, 0.8)), url(${prestation.image})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}>
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-center mb-6">
             <div className="w-16 h-16 rounded-full bg-[#3498db] flex items-center justify-center">

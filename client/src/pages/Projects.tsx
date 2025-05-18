@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ClockIcon, CheckCircleIcon } from "lucide-react";
+import { SEO } from '../components/SEO';
 
 type ProjectStatus = "all" | "ongoing" | "completed";
 type ProjectCategory = "Industriel" | "Commercial" | "Résidentiel" | "Institutionnel" | "Médical";
@@ -86,6 +87,7 @@ export function Projects() {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO title="Nos Projets de Construction" description="Explorez nos réalisations en construction et rénovation. Des projets résidentiels et commerciaux qui témoignent de notre expertise et savoir-faire." image="https://images.unsplash.com/photo-1621275471769-e6aa44457232" />
       <div className="bg-[#0a1e37] text-white py-20">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center">Nos Projets</h1>

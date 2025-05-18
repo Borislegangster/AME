@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
+import { SEO } from '../components/SEO';
 export function Terms() {
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO title="Termes et Conditions" description="Consultez nos conditions générales d'utilisation. Informations importantes sur l'utilisation de nos services de construction et rénovation." />
       <div className="bg-[#0a1e37] text-white py-20">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center">

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { SEO } from '../components/SEO';
 import { AwardIcon, BuildingIcon, UsersIcon, TrendingUpIcon, HeartHandshakeIcon } from "lucide-react";
 export function About() {
   const values = [{
@@ -29,6 +30,7 @@ export function About() {
   }];
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO title="À Propos" description="Découvrez l'histoire d'AME Construction, notre expertise et nos valeurs. Plus de 20 ans d'excellence dans la construction et l'architecture." image="https://images.unsplash.com/photo-1560250097-0b93528c311a" />
       {/* Hero Section */}
       <div className="bg-[#0a1e37] text-white py-20">
         <div className="container mx-auto px-4">

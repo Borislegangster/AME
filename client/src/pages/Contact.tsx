@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { SEO } from '../components/SEO';
 import { MapPinIcon, PhoneIcon, MailIcon, ClockIcon, SendIcon } from "lucide-react";
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -21,6 +22,7 @@ export function Contact() {
   };
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO title="Contact" description="Contactez AME Construction pour vos projets de construction et rénovation. Notre équipe est à votre écoute pour répondre à toutes vos questions." />
       {/* Hero Section */}
       <div className="bg-[#0a1e37] text-white py-20">
         <div className="container mx-auto px-4">

@@ -1,4 +1,5 @@
 import React from "react";
+import { SEO } from '../components/SEO';
 import { HeroSection } from "../components/HeroSection";
 import { FeaturesSection } from "../components/FeaturesSection";
 import { ExperienceSection } from "../components/ExperienceSection";
@@ -13,6 +14,7 @@ export function Home() {
   return ( 
     /* Page d'acceuil */
     <div>
+      <SEO title="Accueil" description="AME Construction, expert en construction et rénovation. Découvrez nos services de construction, rénovation et architecture pour vos projets résidentiels et commerciaux." image="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1" />
       <HeroSection />
       <FeaturesSection />
       <ExperienceSection />

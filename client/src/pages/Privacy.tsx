@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { SEO } from '../components/SEO';
 import { ShieldIcon, LockIcon, UserIcon, DatabaseIcon } from "lucide-react";
 export function Privacy() {
   const sections = [{
@@ -19,6 +20,7 @@ export function Privacy() {
   }];
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO title="Politique de Confidentialité" description="Notre politique de confidentialité détaille comment nous protégeons vos données personnelles. Découvrez comment nous utilisons et sécurisons vos informations." />
       <div className="bg-[#0a1e37] text-white py-20">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-center mb-6">

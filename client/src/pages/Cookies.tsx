@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { SEO } from '../components/SEO';
 import { CookieIcon, SettingsIcon, BarChartIcon, BellIcon } from "lucide-react";
 export function Cookies() {
   const cookieTypes = [{
@@ -19,6 +20,7 @@ export function Cookies() {
   }];
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO title="Politique des Cookies" description="Consultez notre politique des cookies. Informations sur l'utilisation des cookies sur notre site." />
       <div className="bg-[#0a1e37] text-white py-20">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-center mb-6">

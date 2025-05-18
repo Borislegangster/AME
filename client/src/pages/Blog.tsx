@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { SEO } from '../components/SEO';
 import { HeartIcon, MessageCircleIcon, ShareIcon, FacebookIcon, TwitterIcon, LinkedinIcon } from "lucide-react";
 const blogPosts = [{
   id: "construction-trends-2023",
@@ -62,6 +63,7 @@ export function Blog() {
   const [showShare, setShowShare] = useState<string | null>(null);
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO title="Blog Construction et Rénovation" description="Découvrez nos articles sur les dernières tendances et innovations dans le domaine de la construction, rénovation et architecture. Conseils d'experts et actualités du secteur." image="https://images.unsplash.com/photo-1541888946425-d81bb19240f5" />
       <div className="bg-[#0a1e37] text-white py-20">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center">Notre Blog</h1>
