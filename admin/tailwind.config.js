@@ -16,6 +16,12 @@ export default {
           DEFAULT: '#3498db',
           light: '#44a8eb',
           dark: '#2488cb'
+        },
+        success: '#22c55e',
+        warning: '#eab308',
+        danger: '#ef4444',
+        gray: {
+          DEFAULT: '#888888'
         }
       }
     },
