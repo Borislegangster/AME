@@ -1,0 +1,53 @@
+{
+  "users": [
+    {
+      "id": "45f3b149-7d4d-4463-b520-ddfcb42e5c70",
+      "createdAt": "2026-03-05T19:14:49.153Z",
+      "updatedAt": "2026-03-05T19:14:49.153Z",
+      "name": "Admin",
+      "email": "admin@example.com",
+      "passwordHash": "4b9cb992556d11bb1d77442e1650591b:29fcd3c603f209b7a1b0887348c0038812c4b63e273385fc1bb9ca18df2154b55f9fc9cc7c56ec5c70a71609774cf2c42de88f5d6663c0ae1ffbd8da0444f06f",
+      "role": "admin",
+      "emailVerified": true
+    }
+  ],
+  "sessions": [
+    {
+      "id": "2351b824-a8df-4ab9-9ca6-4d7170aa12bc",
+      "createdAt": "2026-03-05T19:15:09.383Z",
+      "updatedAt": "2026-03-05T19:15:09.383Z",
+      "userId": "45f3b149-7d4d-4463-b520-ddfcb42e5c70",
+      "type": "access",
+      "token": "4dd2441ac9ac9b2e419cbc068e16754599afc95238b6616b7d88e5ef5a21ae50",
+      "expiresAt": "2026-03-05T19:30:09.382Z",
+      "revoked": false
+    },
+    {
+      "id": "76235c23-148a-40ac-86ca-0e049dcd6dec",
+      "createdAt": "2026-03-05T19:15:09.383Z",
+      "updatedAt": "2026-03-05T19:15:09.383Z",
+      "userId": "45f3b149-7d4d-4463-b520-ddfcb42e5c70",
+      "type": "refresh",
+      "token": "a97f9e378ad67e92da030b8fc53f4c1e49d02a69c6214ce0a1a26dbd4ddf6ba5",
+      "expiresAt": "2026-03-12T19:15:09.382Z",
+      "revoked": false
+    }
+  ],
+  "services": [
+    {
+      "id": "f6e48601-5079-4d43-b824-9ac37ca7b667",
+      "createdAt": "2026-03-05T19:15:09.397Z",
+      "updatedAt": "2026-03-05T19:15:09.397Z",
+      "title": "Construction neuve",
+      "slug": "construction-neuve",
+      "category": "construction",
+      "description": "Description test",
+      "status": "published"
+    }
+  ],
+  "projects": [],
+  "blogPosts": [],
+  "contacts": [],
+  "newsletterSubscriptions": [],
+  "faqs": []
+}
